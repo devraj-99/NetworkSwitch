@@ -1,3 +1,10 @@
+> **Fork notice (devraj-99):** this fork adds a home-screen
+> widget (`app/src/main/java/com/supernova/networkswitch/widget/`) that performs
+> the same network-mode toggle as the Quick Settings tile, or opens the hidden
+> "Phone info" / network settings screen when neither Shizuku nor root is
+> available. Original project: https://github.com/aunchagaonkar/NetworkSwitch
+> by aunchagaonkar, licensed GPL-3.0 (see LICENSE).
+
 <div align="center">
 <img src="media/app_icon.png" width="160" height="160" style="display: block; margin: 0 auto"/>
 <h1>Network Switch</h1>

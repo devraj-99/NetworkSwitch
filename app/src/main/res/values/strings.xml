@@ -14,4 +14,7 @@
     <string name="tile_switching">Switching…</string>
     <string name="tile_next_mode">Next: %1$s</string>
     <string name="tile_not_loaded">Tap to load</string>
+    <!-- Home-screen widget -->
+    <string name="widget_label">5G Only Switch</string>
+    <string name="widget_description">One-tap network mode switch</string>
 </resources>
