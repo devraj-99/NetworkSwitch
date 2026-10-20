@@ -30,15 +30,15 @@ jobs:
       - name: Build debug APK
         run: |
           chmod +x gradlew
-          ./gradlew assembleDebug --stacktrace
+          ./gradlew assembleRelease --stacktrace
 
       - name: Rename APK
-        run: cp app/build/outputs/apk/debug/app-debug.apk NetworkSwitch-widget.apk
+        run: cp app/build/outputs/apk/release/app-release.apk NetworkSwitch-widget.apk
 
       - name: Publish APK to GitHub Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create "widget-v1.1" NetworkSwitch-widget.apk \
-            --title "Network Switch Widget v1.1" \
+          gh release create "widget-v1.2" NetworkSwitch-widget.apk \
+            --title "Network Switch Widget v1.2 (release)" \
             --notes "Fork of aunchagaonkar/NetworkSwitch (GPL-3.0) with an added home-screen widget. Widget tap toggles 5G-only/4G-only when Shizuku or root is available; otherwise it opens the Phone info / network settings screen. Debug-signed APK, sideload and allow install from unknown sources."
